@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Oat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_common">важное</string>
+    <string name="news_lenta">лента</string>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu nibh eu quam aliquam mollis. Nunc at ex magna. Donec commodo tellus sit amet ante bibendum efficitur. Vestibulum enim mauris, malesuada at accumsan ut, tempus id ante. Integer vehicula massa in porta sollicitudin. Aenean rhoncus diam sem, at facilisis diam tristique eget. Nullam at nibh sed metus congue rutrum.
+    </string>
+    <string name="lorem_small">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu nibh eu quam aliquam mollis. Nunc at ex magna. Donec commodo tellus sit amet ante bibendum efficitur.</string>
+    <string name="addHomeWork">Добавить ДЗ</string>
+    <string name="notification">Напоминание</string>
+    <string name="teacher_example">Преподаватель: И.С. Назарова</string>
+    <string name="room_example">Кабинет: 666</string>
+    <string name="group_example">ПР-318</string>
+    <string name="weekday_example">Вторая суббота</string>
+    <string name="data_example">21.01.2021</string>
+    <string name="card_title_example">Дистанционка с 20.01.2020</string>
+    <string name="card_title_example2">В Омской области реорганизуют профессиональные образовательные организации</string>
+    <string name="author_example">Автор</string>
+</resources>

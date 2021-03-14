@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_hw"
+        android:actionLayout="@layout/lesson_card"
+        android:title="@string/addHomeWork" />
+    <item
+        android:id="@+id/item_alarm"
+        android:actionLayout="@layout/lesson_card"
+        android:title="@string/notification" />
+</menu>

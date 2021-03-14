@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/news">
+
+    <fragment
+        android:id="@+id/news"
+        android:name="com.example.oat.News"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/timetable"
+            app:destination="@id/timetable"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/timetable"
+        android:name="com.example.oat.Timetable"
+        android:label="fragment_timetable"
+        tools:layout="@layout/fragment_timetable" />
+    <fragment
+        android:id="@+id/hub"
+        android:name="com.example.oat.Hub"
+        android:label="fragment_hub"
+        tools:layout="@layout/fragment_hub" />
+</navigation>

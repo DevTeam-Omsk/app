@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="timetable_screens.Today"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_groupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/group_example"
+                android:textAppearance="@style/b" />
+
+            <TextView
+                android:id="@+id/tv_weekday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weekday_example" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTodayDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_example" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_today"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="true"
+        tools:listitem="@layout/lesson_card" />
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/card"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="?attr/dialogCornerRadius"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/card_container"
+        style="@style/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/card_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="fill_horizontal">
+
+            <TextView
+                android:id="@+id/tvLessonName"
+                style="@style/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Русский язык"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/isHaveHW"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/icon_hw"
+                android:layout_marginEnd="50dp"/>
+
+            <ImageButton
+                android:id="@+id/btnCardOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/icon_settings" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSubGroup"
+                    style="@style/p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1 подгруппа" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTeacher"
+                    style="@style/p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/teacher_example"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/tvRoom"
+                    style="@style/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/room_example"
+                    android:textAlignment="viewEnd" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
